@@ -1,0 +1,49 @@
+@charset 'utf-8';
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+body {
+  overflow-x: hidden; /*가로 스크롤 안 생기게 만듦*/
+  color: rgb(29, 29, 31);
+  letter-spacing: -0.05em;
+  background: white;
+}
+p {
+  line-height: 1.6;
+}
+
+.global-nav {
+  height: 44px;
+}
+
+.local-nav {
+  height: 52px;
+  border-bottom: 1px solid #ddd;
+}
+.global-nav-links,
+.local-nav-links {
+  max-width: 1000px;
+  margin: 0 auto; /*센터 정렬*/
+  display: flex;
+  height: 100%; /*부모랑 같게*/
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(29, 29, 31);
+}
+.global-nav-links {
+  justify-content: space-between; /*안에 있는 거 벌어지게 정렬*/
+}
+.local-nav-links .product-name {
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.local-nav-links a {
+  font-size: 0.8rem;
+}
+.local-nav-links a:not(.product-name) {
+  margin-left: 2em;
+}
